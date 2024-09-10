@@ -7,7 +7,7 @@ import Link from "next/link";
 import { links } from "./Nav";
 
 const MobileNav = () => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   return (
     <Sheet>
