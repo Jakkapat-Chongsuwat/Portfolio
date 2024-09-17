@@ -1,6 +1,7 @@
 import MobileNav from "../Nav/MobileNav";
 import Nav from "../Nav/Nav"; // Import client-side Nav component
 import Link from "next/link"; // Link is safe to use on the server side
+import { Button } from "../ui/button";
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav /> {/* Nav is client-side, so it will render dynamically */}
           <Link href="/contact">
-            <button>Hire Me</button>
+            <Button>Hire Me</Button>
           </Link>
         </div>
         {/* Mobile nav */}
