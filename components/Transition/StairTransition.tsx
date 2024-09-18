@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import Stairs from "./Stairs";
 
-const StairTransition = ({ children }: { children: React.ReactNode }) => {
+const StairTransition = () => {
   const pathname = usePathname();
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -41,7 +41,6 @@ const StairTransition = ({ children }: { children: React.ReactNode }) => {
           />
         </div>
       </AnimatePresence>
-      {children}
     </>
   );
 };
