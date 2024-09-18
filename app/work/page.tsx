@@ -17,6 +17,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/Slider/WorkSliderBtns";
 
 const projects = [
   {
@@ -167,10 +168,15 @@ const Page = () => {
                         />
                       </div>
                     </div>
-                    {/* <WorkSliderBtns /> */}
                   </SwiperSlide>
                 );
               })}
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] z-20 w-full justify-between
+                items-center"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex
+                justify-center items-center transition-all"
+              />
             </Swiper>
           </div>
         </div>
