@@ -65,7 +65,7 @@ const projects = [
 const Page = () => {
   const [project, setProject] = useState(projects[0]);
 
-  const handleSlideChange = (swiper: { activeIndex: any }) => {
+  const handleSlideChange = (swiper: { activeIndex: number }) => {
     const currentSlide = swiper.activeIndex;
     setProject(projects[currentSlide]);
   };
